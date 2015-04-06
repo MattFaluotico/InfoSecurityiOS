@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACBD40181AD2353200237A20 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBD40171AD2353200237A20 /* MapKit.framework */; };
 		ACD219931AA618CE0029F301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD219921AA618CE0029F301 /* main.m */; };
 		ACD219961AA618CE0029F301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD219951AA618CE0029F301 /* AppDelegate.m */; };
 		ACD219991AA618CE0029F301 /* StrangerDanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACD219971AA618CE0029F301 /* StrangerDanger.xcdatamodeld */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACBD40171AD2353200237A20 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ACD2198D1AA618CE0029F301 /* StrangerDanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrangerDanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD219911AA618CE0029F301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD219921AA618CE0029F301 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBD40181AD2353200237A20 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 		ACD219841AA618CE0029F301 = {
 			isa = PBXGroup;
 			children = (
+				ACBD40171AD2353200237A20 /* MapKit.framework */,
 				ACD2198F1AA618CE0029F301 /* StrangerDanger */,
 				ACD219AF1AA618CE0029F301 /* StrangerDangerTests */,
 				ACD2198E1AA618CE0029F301 /* Products */,
@@ -422,6 +426,7 @@
 				ACD219B81AA618CE0029F301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACD219B91AA618CE0029F301 /* Build configuration list for PBXNativeTarget "StrangerDangerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				ACD219BB1AA618CE0029F301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
