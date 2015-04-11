@@ -20,6 +20,8 @@
     self.manager = [[CLLocationManager alloc] init];
     self.manager.delegate = self;
     
+    [self.manager startUpdatingLocation];
+    
     [self askUserForLocation];
     [self zoomToCurrentLocation];
 }
@@ -40,12 +42,13 @@
     [self.mapView setRegion:zoomin animated:YES];
 }
 
-- (void) placePoint {
-    
+- (void) placePoint: (MKPlacemark *) mark  {
+    [self.mapView addAnnotation:mark];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     [self zoomToCurrentLocation];
+    NSLog(@"fire");
     self.userLocation = self.mapView.userLocation.location;
 }
 

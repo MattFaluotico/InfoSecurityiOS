@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property CLLocationManager *manager;
 @property CLLocation *userLocation;
+
+- (void) placePoint: (MKPlacemark *) mark;
 @end
