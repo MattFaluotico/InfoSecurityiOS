@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -24,5 +25,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) getLocation {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"PoliceLocations" ofType:@"json"];
+    NSError *deserializingError;
+    NSURL *localFileURL = [NSURL fileURLWithPath:path];
+    
+    NSData *contentOfLocalFile = [NSData dataWithContentsOfURL:localFileURL];
+    
+    NSArray * objects = [NSJSONSerialization JSONObjectWithData:contentOfLocalFile options:NSJSONWritingPrettyPrinted error:&deserializingError];
+    
+    for (NSDictionary *json in objects) {
+        NSNumber *lat = json[@"lat"];
+        NSNumber *lon = json[@"long"];
+        NSString *name = json[@"name"];
+        
+        CLLocationCoordinate2D coor = CLLocationCoordinate2DMake([lat doubleValue], [lon doubleValue]);
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coor addressDictionary:nil];
+        
+        [self placePoint:placemark];
+        
+    }
+}
 
 @end
