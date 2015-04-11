@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="2144" y="8"/>
         </scene>
-        <!--View Controller-->
+        <!--Notify View Controller-->
         <scene sceneID="Qcl-q5-84Z">
             <objects>
-                <viewController id="tPJ-Vx-8N2" sceneMemberID="viewController">
+                <viewController id="tPJ-Vx-8N2" customClass="NotifyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WIy-Z5-Rfm"/>
                         <viewControllerLayoutGuide type="bottom" id="nEW-Ao-bVR"/>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="2964" y="12"/>
         </scene>
-        <!--View Controller-->
+        <!--Crime Map View Controller-->
         <scene sceneID="XS1-rK-vDn">
             <objects>
-                <viewController id="LgM-p1-D59" sceneMemberID="viewController">
+                <viewController id="LgM-p1-D59" customClass="CrimeMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rgf-bd-NEW"/>
                         <viewControllerLayoutGuide type="bottom" id="pV4-yq-eFm"/>
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="2956" y="700"/>
         </scene>
-        <!--View Controller-->
+        <!--Police Map View Controller-->
         <scene sceneID="AVi-Ol-RAA">
             <objects>
-                <viewController id="vbQ-ZQ-Wr4" sceneMemberID="viewController">
+                <viewController id="vbQ-ZQ-Wr4" customClass="PoliceMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KKN-2E-j3C"/>
                         <viewControllerLayoutGuide type="bottom" id="Gey-TD-OI8"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="2938" y="1438"/>
         </scene>
-        <!--View Controller-->
+        <!--Siren View Controller-->
         <scene sceneID="uGc-rD-dcS">
             <objects>
-                <viewController id="Vfz-GO-l5L" sceneMemberID="viewController">
+                <viewController id="Vfz-GO-l5L" customClass="SirenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vOU-Jx-5N9"/>
                         <viewControllerLayoutGuide type="bottom" id="IK5-F5-xHj"/>
@@ -159,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="2938" y="2202"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="PiI-EG-5KO">
             <objects>
-                <viewController id="enV-4S-sG3" sceneMemberID="viewController">
+                <viewController id="enV-4S-sG3" customClass="EditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qkq-M2-or2"/>
                         <viewControllerLayoutGuide type="bottom" id="JsE-2D-xJL"/>
