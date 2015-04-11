@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseMapViewController.h"
 
-@interface PoliceMapViewController : UIViewController
+@interface PoliceMapViewController : BaseMapViewController
 
 @end

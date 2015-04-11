@@ -7,31 +7,53 @@
 //
 
 #import "EditViewController.h"
-
+#import "EditForm.h"
+#import "ContactFormViewController.h"
 @interface EditViewController ()
-
+@property ContactFormViewController *contact;
 @end
 
 @implementation EditViewController
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    EditForm *editForm = [EditForm new];
+    self.formController.form = editForm;
+    
+    self.contact = [ContactFormViewController new];
+    
+    self.title = @"Edit";
 }
 
-- (void)didReceiveMemoryWarning {
+- (void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) openContact1 {
+    [self.contact setContact:@"one"];
+    [self.navigationController pushViewController:self.contact animated:YES];
 }
-*/
+
+- (void) openContact2 {
+    [self.contact setContact:@"two"];
+    [self.navigationController pushViewController:self.contact animated:YES];
+}
+
+- (void) openContact3 {
+    [self.contact setContact:@"three"];
+     [self.navigationController pushViewController:self.contact animated:YES];
+}
+
+- (void) openContact4 {
+    [self.contact setContact:@"four"];
+    [self.navigationController pushViewController:self.contact animated:YES];
+}
+
+- (void) openContact5 {
+    [self.contact setContact:@"five"];
+    [self.navigationController pushViewController:self.contact animated:YES];
+}
 
 @end
