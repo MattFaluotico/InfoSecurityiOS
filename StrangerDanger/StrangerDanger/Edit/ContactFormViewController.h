@@ -1,5 +1,5 @@
 //
-//  CrimeMapViewController.h
+//  ContactFormViewController.h
 //  StrangerDanger
 //
 //  Created by Matthew Faluotico on 4/11/15.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseMapViewController.h"
+#import "FXForms.h"
 
-@interface CrimeMapViewController : BaseMapViewController
-
+@interface ContactFormViewController : FXFormViewController
+@property NSString *contact;
 @end

@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.manager = [[CLLocationManager alloc] init];
+    self.manager.delegate = self;
+    
+    [self askUserForLocation];
+    [self zoomToCurrentLocation];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +29,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) askUserForLocation {
+    if ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationWhenInUseUsageDescription"]) {
+        [self.manager  requestWhenInUseAuthorization];
+    }
 }
-*/
+
+- (void) zoomToCurrentLocation {
+    MKCoordinateRegion zoomin = MKCoordinateRegionMakeWithDistance(self.manager.location.coordinate, 1500, 1500);
+    [self.mapView setRegion:zoomin animated:YES];
+}
+
+- (void) placePoint {
+    
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    [self zoomToCurrentLocation];
+    self.userLocation = self.mapView.userLocation.location;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    [self zoomToCurrentLocation];
+    self.userLocation = self.mapView.userLocation.location;
+}
+
 
 @end

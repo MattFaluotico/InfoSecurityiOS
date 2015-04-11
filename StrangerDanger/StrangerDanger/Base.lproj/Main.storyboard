@@ -34,10 +34,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAa-rA-KuF">
-                                <rect key="frame" x="232" y="250" width="136" height="100"/>
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="Jry-ST-Fka"/>
-                                    <constraint firstAttribute="height" constant="100" id="L3g-Xb-RMH"/>
+                                    <constraint firstAttribute="width" constant="150" id="Jry-ST-Fka"/>
+                                    <constraint firstAttribute="height" constant="150" id="L3g-Xb-RMH"/>
                                     <constraint firstAttribute="width" constant="100" id="rPk-D9-4SC"/>
                                 </constraints>
                                 <state key="normal" title="Notify ICE Contants">
@@ -58,6 +58,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZJZ-d1-xQ1"/>
+                    <connections>
+                        <outlet property="notifyButton" destination="CAa-rA-KuF" id="JVf-BD-X8g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpv-s1-yxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,10 +91,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JEj-Lg-WnP"/>
+                    <connections>
+                        <outlet property="mapView" destination="nIy-J0-kbe" id="1z7-Um-9n3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtN-6A-whK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="700"/>
+            <point key="canvasLocation" x="2938" y="730"/>
         </scene>
         <!--Police Map View Controller-->
         <scene sceneID="AVi-Ol-RAA">
@@ -118,6 +124,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="01A-N5-h11"/>
+                    <connections>
+                        <outlet property="mapView" destination="JdI-DJ-erM" id="PGe-Pg-Dlc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpm-ws-I36" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,13 +145,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sq5-1a-ePl">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Tzr-St-d8x"/>
-                                    <constraint firstAttribute="height" constant="100" id="wI0-zQ-OFz"/>
+                                    <constraint firstAttribute="width" constant="200" id="Tzr-St-d8x"/>
+                                    <constraint firstAttribute="height" constant="200" id="wI0-zQ-OFz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Siren">
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -154,6 +165,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="deY-hY-o27"/>
+                    <connections>
+                        <outlet property="sirenButton" destination="sq5-1a-ePl" id="kHw-Pw-5IQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEy-9x-WM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +250,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyM-MI-iNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-946" y="995"/>
+            <point key="canvasLocation" x="1334" y="1438"/>
         </scene>
         <!--Siren-->
         <scene sceneID="31V-zu-Joi">
