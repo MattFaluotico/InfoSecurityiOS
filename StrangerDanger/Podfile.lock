@@ -1,0 +1,39 @@
+PODS:
+  - AFDropdownNotification (1.1)
+  - AFNetworking (2.5.2):
+    - AFNetworking/NSURLConnection (= 2.5.2)
+    - AFNetworking/NSURLSession (= 2.5.2)
+    - AFNetworking/Reachability (= 2.5.2)
+    - AFNetworking/Security (= 2.5.2)
+    - AFNetworking/Serialization (= 2.5.2)
+    - AFNetworking/UIKit (= 2.5.2)
+  - AFNetworking/NSURLConnection (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.2)
+  - AFNetworking/Security (2.5.2)
+  - AFNetworking/Serialization (2.5.2)
+  - AFNetworking/UIKit (2.5.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DBMapSelectorViewController (1.1.0)
+  - FXForms (1.2.12)
+
+DEPENDENCIES:
+  - AFDropdownNotification
+  - AFNetworking
+  - DBMapSelectorViewController
+  - FXForms
+
+SPEC CHECKSUMS:
+  AFDropdownNotification: 4125b132cd03a8d6293e09ce000aeef55ced1364
+  AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
+  DBMapSelectorViewController: 5fba9cfd4e592abff493b4be1f1182acbbaccbbe
+  FXForms: b6a78bac9f6b597ce704e34ac7c1ce9ff628b1d5
+
+COCOAPODS: 0.36.3
