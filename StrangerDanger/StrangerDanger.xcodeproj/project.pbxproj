@@ -15,6 +15,7 @@
 		ACAC36A71AD9896C006E2DA3 /* NotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAC36A61AD9896C006E2DA3 /* NotifyViewController.m */; };
 		ACAC36AA1AD9897D006E2DA3 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAC36A91AD9897D006E2DA3 /* EditViewController.m */; };
 		ACAC36AD1AD9899C006E2DA3 /* SirenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAC36AC1AD9899C006E2DA3 /* SirenViewController.m */; };
+		ACAC36AF1AD9919E006E2DA3 /* Leedle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACAC36AE1AD9919E006E2DA3 /* Leedle.mp3 */; };
 		ACBD40181AD2353200237A20 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBD40171AD2353200237A20 /* MapKit.framework */; };
 		ACD219931AA618CE0029F301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD219921AA618CE0029F301 /* main.m */; };
 		ACD219961AA618CE0029F301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD219951AA618CE0029F301 /* AppDelegate.m */; };
@@ -50,6 +51,7 @@
 		ACAC36A91AD9897D006E2DA3 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditViewController.m; path = Features/EditViewController.m; sourceTree = "<group>"; };
 		ACAC36AB1AD9899C006E2DA3 /* SirenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SirenViewController.h; path = Features/SirenViewController.h; sourceTree = "<group>"; };
 		ACAC36AC1AD9899C006E2DA3 /* SirenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SirenViewController.m; path = Features/SirenViewController.m; sourceTree = "<group>"; };
+		ACAC36AE1AD9919E006E2DA3 /* Leedle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Leedle.mp3; sourceTree = "<group>"; };
 		ACBD40171AD2353200237A20 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ACD2198D1AA618CE0029F301 /* StrangerDanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrangerDanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD219911AA618CE0029F301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		AC6F12DD1AD82E6B00246647 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				ACAC36AE1AD9919E006E2DA3 /* Leedle.mp3 */,
 				AC6F12DE1AD82E7400246647 /* Siren.mp3 */,
 			);
 			name = Assets;
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAC36AF1AD9919E006E2DA3 /* Leedle.mp3 in Resources */,
 				AC6F12DF1AD82E7400246647 /* Siren.mp3 in Resources */,
 				ACD219A21AA618CE0029F301 /* Main.storyboard in Resources */,
 				ACD219A71AA618CE0029F301 /* LaunchScreen.xib in Resources */,
