@@ -1,0 +1,13 @@
+//
+//  SDNav.h
+//  StrangerDanger
+//
+//  Created by Matthew Faluotico on 4/13/15.
+//  Copyright (c) 2015 MF. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SDNav : UINavigationController
+
+@end

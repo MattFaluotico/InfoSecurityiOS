@@ -8,7 +8,7 @@
         <!--Master-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
-                <navigationController title="Master" id="rS3-R9-Ivy" sceneMemberID="viewController">
+                <navigationController title="Master" id="rS3-R9-Ivy" customClass="SDNav" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Help!" id="3ye-YG-Nj4"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="150" id="L3g-Xb-RMH"/>
                                     <constraint firstAttribute="width" constant="100" id="rPk-D9-4SC"/>
                                 </constraints>
-                                <state key="normal" title="Notify ICE Contants">
+                                <state key="normal" title="Notify ICE Contacts">
                                     <color key="titleColor" red="0.66854512690000001" green="0.0" blue="0.01339262817" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -195,7 +195,7 @@
         <!--Crime Map-->
         <scene sceneID="UJe-TE-GrT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gvj-FY-cL9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gvj-FY-cL9" customClass="SDNav" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Crime Map" id="K4a-h1-AnO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q0f-bT-0a2">
@@ -214,7 +214,7 @@
         <!--Police-->
         <scene sceneID="lsy-hX-ENp">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5Z-SX-ie2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5Z-SX-ie2" customClass="SDNav" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Police" id="BOS-8C-gmy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qex-Id-If1">
@@ -255,7 +255,7 @@
         <!--Siren-->
         <scene sceneID="31V-zu-Joi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5eq-k4-dko" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5eq-k4-dko" customClass="SDNav" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Siren" id="kfn-hW-fjc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MCj-U7-jqm">
@@ -274,7 +274,7 @@
         <!--Edit-->
         <scene sceneID="GQK-VA-Cau">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="shh-ND-oCA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="shh-ND-oCA" customClass="SDNav" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Edit" id="OCH-Gi-5Ef"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bMF-Xp-oXc">
