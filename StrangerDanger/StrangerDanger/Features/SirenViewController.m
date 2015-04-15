@@ -20,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"Siren";
+    
     NSString *pathSiren = [[NSBundle mainBundle] pathForResource:@"Siren" ofType:@"mp3"];
     NSString *pathSecond = [[NSBundle mainBundle] pathForResource:@"Leedle" ofType:@"mp3"];
     self.siren = [[Sound alloc] initWithContentsOfFile:pathSiren];

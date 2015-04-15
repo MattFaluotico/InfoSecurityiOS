@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Police Map";
     // Do any additional setup after loading the view.
 }
 

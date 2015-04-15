@@ -26,6 +26,8 @@
     
     [self.notifyButton addTarget:self action:@selector(sendMessage) forControlEvents:UIControlEventTouchUpInside];
     
+    self.title = @"Notify";
+    
     // Do any additional setup after loading the view.
 }
 

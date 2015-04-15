@@ -16,9 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationBar.barTintColor = [UIColor redColor];
+
+    NSDictionary *titleAttributes = @{
+                                      NSFontAttributeName : [UIFont systemFontOfSize:20],
+                                      NSForegroundColorAttributeName : [UIColor whiteColor]
+                                      };
     
-    self.navigationBar.barTintColor = [UIColor lightGrayColor];
-    
+    self.navigationBar.titleTextAttributes = titleAttributes;
 }
 
 - (void)didReceiveMemoryWarning {

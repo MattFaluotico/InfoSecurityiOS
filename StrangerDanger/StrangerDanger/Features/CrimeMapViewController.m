@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.title = @"Crime Map";
+    
     // Do any additional setup after loading the view.
 }
 
