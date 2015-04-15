@@ -1,0 +1,86 @@
+[
+  {"name": "Dublin Police Department", 
+    "lat": 40.101229,
+    "long": -83.141891
+  },
+  {"name": "Ohio State Highway Patrol (North)",
+    "lat": 40.089369,
+    "long": -83.068377
+  },
+  {"name": "Perry Twp Police Dept",
+    "lat": 40.112216,
+    "long": -83.091380
+  },
+  {"name": "Worthington Police Dept",
+    "lat": 40.097716,
+    "long": -83.016042
+  },
+  { "name": "Ohio State Highway Patrol (Central)",
+    "lat": 40.090887,
+    "long": -82.993383
+  },
+  {"name": "Minerva Park Police",
+    "lat": 40.076965, 
+    "long": -82.942228
+  },
+  {"name": "Columbus Police Department",
+    "lat": 40.062121,
+    "long": -82.988577
+  },
+  {"name": "Upper Arlington Police Dept",
+    "lat": 40.031108,
+    "long": -83.050547
+  },
+  {"name": "Ohio State University Police Dept",
+    "lat": 40.002169,
+    "long": -83.033767
+  },
+  {"name": "Grandview Police Dept",
+    "lat": 39.978298,
+    "long": -83.044496
+  },
+  {"name": "Columbus Police Dept",
+    "lat": 39.976522,
+    "long": -83.070331
+  },
+  {"name": "Mifflin Twp Police Dept",
+    "lat": 40.026737, 
+    "long": -82.946638
+  },
+  {"name": "Bexley Police Dept",
+    "lat": 39.981504,
+    "long": -82.929815
+  },
+  {"name": "Whitehall Police Department",
+    "lat": 39.968415,
+    "long": -82.885612
+  },
+  {"name": "Ohio State Highway Patrol",
+    "lat": 39.937754,
+    "long": -82.944406
+  },
+  {"name": "Frankin County Sheriff",
+    "lat": 39.933279,
+    "long": -82.942689
+  },
+  {"name": "Obetz Police Dept",
+    "lat": 39.883900,
+    "long": -82.934621
+  },
+  {"name": "Valleyview Police Department",
+    "lat": 39.963875,
+    "long": -83.070062
+  },
+  {"name": "Griggs Marine & Reservoir Patrol",
+    "lat": 40.016220,
+    "long": -83.091606
+  },
+  {"name": "Hilliard Police Department",
+    "lat": 40.016220,
+    "long": -83.091606
+  },
+  {"name": "Columbus Ohio Division of Police",
+    "lat": 39.964269,
+    "long": -83.004091
+  }
+]

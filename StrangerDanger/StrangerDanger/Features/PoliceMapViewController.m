@@ -18,6 +18,8 @@
     [super viewDidLoad];
     
     self.title = @"Police Map";
+    
+    [self getLocation];
     // Do any additional setup after loading the view.
 }
 
@@ -27,7 +29,7 @@
 }
 
 - (void) getLocation {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"PoliceLocations" ofType:@"json"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"policeLocations" ofType:@"json"];
     NSError *deserializingError;
     NSURL *localFileURL = [NSURL fileURLWithPath:path];
     
@@ -42,7 +44,6 @@
         
         CLLocationCoordinate2D coor = CLLocationCoordinate2DMake([lat doubleValue], [lon doubleValue]);
         MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coor addressDictionary:nil];
-        
         [self placePoint:placemark];
         
     }

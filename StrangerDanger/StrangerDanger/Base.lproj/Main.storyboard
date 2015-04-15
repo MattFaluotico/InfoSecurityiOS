@@ -34,10 +34,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAa-rA-KuF">
-                                <rect key="frame" x="225" y="201" width="150" height="150"/>
+                                <rect key="frame" x="200" y="176" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Jry-ST-Fka"/>
-                                    <constraint firstAttribute="height" constant="150" id="L3g-Xb-RMH"/>
+                                    <constraint firstAttribute="height" constant="200" id="8Nh-qy-9fF"/>
+                                    <constraint firstAttribute="width" constant="200" id="Lvj-3e-wmG"/>
                                     <constraint firstAttribute="width" constant="100" id="rPk-D9-4SC"/>
                                 </constraints>
                                 <state key="normal" title="Notify ICE Contacts">
@@ -53,8 +53,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="CAa-rA-KuF" secondAttribute="centerY" id="e58-ZB-N0a"/>
-                            <constraint firstAttribute="centerX" secondItem="CAa-rA-KuF" secondAttribute="centerX" id="sIf-sK-jr5"/>
+                            <constraint firstAttribute="centerX" secondItem="CAa-rA-KuF" secondAttribute="centerX" id="qxF-FH-6br"/>
+                            <constraint firstAttribute="centerY" secondItem="CAa-rA-KuF" secondAttribute="centerY" constant="-0.5" id="s2s-hm-6VT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZJZ-d1-xQ1"/>

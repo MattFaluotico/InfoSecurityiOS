@@ -10,6 +10,7 @@
 		3656907E8EC663E719B9CACF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A6AAE49F412423BC71683D /* libPods.a */; };
 		AC4475E31ADCC76200F8E0C3 /* SDNav.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4475E21ADCC76200F8E0C3 /* SDNav.m */; };
 		AC6F12DF1AD82E7400246647 /* Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC6F12DE1AD82E7400246647 /* Siren.mp3 */; };
+		AC76BAFE1ADEE7B200143090 /* policeLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = AC76BAFD1ADEE7B200143090 /* policeLocations.json */; };
 		AC798FDF1ADD684600F7D000 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC798FDE1ADD684600F7D000 /* MessageUI.framework */; };
 		ACAC369D1AD98928006E2DA3 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAC369C1AD98928006E2DA3 /* CrimeMapViewController.m */; };
 		ACAC36A01AD98944006E2DA3 /* PoliceMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAC369F1AD98944006E2DA3 /* PoliceMapViewController.m */; };
@@ -46,6 +47,7 @@
 		AC4475E11ADCC76200F8E0C3 /* SDNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNav.h; sourceTree = "<group>"; };
 		AC4475E21ADCC76200F8E0C3 /* SDNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNav.m; sourceTree = "<group>"; };
 		AC6F12DE1AD82E7400246647 /* Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siren.mp3; sourceTree = "<group>"; };
+		AC76BAFD1ADEE7B200143090 /* policeLocations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeLocations.json; sourceTree = "<group>"; };
 		AC798FDE1ADD684600F7D000 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ACAC369B1AD98928006E2DA3 /* CrimeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrimeMapViewController.h; path = Features/CrimeMapViewController.h; sourceTree = "<group>"; };
 		ACAC369C1AD98928006E2DA3 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrimeMapViewController.m; path = Features/CrimeMapViewController.m; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		AC6F12DD1AD82E6B00246647 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AC76BAFD1ADEE7B200143090 /* policeLocations.json */,
 				ACAC36AE1AD9919E006E2DA3 /* Leedle.mp3 */,
 				AC6F12DE1AD82E7400246647 /* Siren.mp3 */,
 			);
@@ -327,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC76BAFE1ADEE7B200143090 /* policeLocations.json in Resources */,
 				ACAC36AF1AD9919E006E2DA3 /* Leedle.mp3 in Resources */,
 				AC6F12DF1AD82E7400246647 /* Siren.mp3 in Resources */,
 				ACD219A21AA618CE0029F301 /* Main.storyboard in Resources */,
