@@ -90,7 +90,13 @@
                             <constraint firstItem="nIy-J0-kbe" firstAttribute="top" secondItem="Rgf-bd-NEW" secondAttribute="bottom" id="peq-Ad-V2p"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JEj-Lg-WnP"/>
+                    <navigationItem key="navigationItem" id="JEj-Lg-WnP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ZY0-aQ-my1">
+                            <connections>
+                                <action selector="boing:" destination="LgM-p1-D59" id="oDc-J1-GIT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="nIy-J0-kbe" id="1z7-Um-9n3"/>
                     </connections>

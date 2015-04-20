@@ -50,6 +50,9 @@
     [self zoomToCurrentLocation];
     NSLog(@"fire");
     self.userLocation = self.mapView.userLocation.location;
+    
+    NSLog(@"%f", self.userLocation.coordinate.longitude);
+    
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {

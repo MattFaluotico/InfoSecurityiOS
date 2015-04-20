@@ -7,6 +7,7 @@
 //
 
 #import "CrimeMapViewController.h"
+#import "AFNetworking.h"
 
 @interface CrimeMapViewController ()
 
@@ -16,11 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
     self.title = @"Crime Map";
     
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,14 +27,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)boing:(id)sender {
+    [self getLocation];
 }
-*/
+
+- (void) getLocation {
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    self.userLocation = self.mapView.userLocation;
+    CGFloat lat = self.userLocation.coordinate.latitude;
+    CGFloat lon = self.userLocation.coordinate.longitude;
+    
+    NSString *URL = [NSString stringWithFormat:@"http://api.spotcrime.com/crimes.json?lat=%f&lon=%f&radius=0.020&callback=&key=MLC-restricted-key", lat, lon];
+    
+    NSLog(URL);
+    
+    [manager GET:URL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSArray *crimes = responseObject[@"crimes"];
+        
+        if (crimes) {
+            
+            for (NSDictionary *crime in crimes) {
+                
+                NSNumber *crimeLat = crime[@"lat"];
+                NSNumber *crimeLon = crime[@"lon"];
+                
+                CLLocationCoordinate2D coor = CLLocationCoordinate2DMake([crimeLat doubleValue], [crimeLon doubleValue]);
+                MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coor addressDictionary:nil];
+                [self placePoint:placemark];
+            }
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
 
 @end
