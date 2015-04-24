@@ -43,7 +43,7 @@
         NSLog(@"NOPE!");
         
         AFDropdownNotification *notify = [[AFDropdownNotification alloc] init];
-        notify.titleText = @"Your phone cant sent texts!";
+        notify.titleText = @"Your phone can't sent texts!";
         notify.subtitleText = @"...";
         [notify presentInView:self.view withGravityAnimation:NO];
         [self performSelector:@selector(notifyBye:) withObject:notify afterDelay:2];
@@ -53,17 +53,23 @@
     MFMessageComposeViewController *textController = [[MFMessageComposeViewController alloc] init];
     
     NSUserDefaults *saves = [NSUserDefaults standardUserDefaults];
+
+    NSMutableArray *recipiants = [NSMutableArray new];
     
-    NSString *phone1 = [saves objectForKey: @"phone_one"] ?: @"";
-    NSString *phone2 = [saves objectForKey: @"phone_two"] ?: @"";
-    NSString *phone3 = [saves objectForKey: @"phone_three"] ?: @"";
-    NSString *phone4 = [saves objectForKey: @"phone_four"] ?: @"";
-    NSString *phone5 = [saves objectForKey: @"phone_five"] ?: @"";
+    NSString *phone1 = [saves objectForKey: @"phone_one"];
+        if (phone1) { [recipiants addObject:phone1]; }
+    NSString *phone2 = [saves objectForKey: @"phone_two"];
+        if (phone2) { [recipiants addObject:phone2]; }
+    NSString *phone3 = [saves objectForKey: @"phone_three"];
+        if (phone3) { [recipiants addObject:phone3]; }
+    NSString *phone4 = [saves objectForKey: @"phone_four"];
+        if (phone4) { [recipiants addObject:phone4]; }
+    NSString *phone5 = [saves objectForKey: @"phone_five"];
+        if (phone5) { [recipiants addObject:phone5]; }
     
-    NSArray *recipiants = @[phone1, phone2, phone3, phone4, phone5];
     
     textController.recipients = recipiants;
-    textController.body = @"Help! I am not save right now\nPlease call or send help.\n-Sent via StrangeDanger for iOS";
+    textController.body = @"Help! I am not safe right now\nPlease call or send help.\n-Sent via StrangeDanger for iOS";
     textController.messageComposeDelegate = self;
     
     [self presentViewController:textController animated:YES completion:nil];
